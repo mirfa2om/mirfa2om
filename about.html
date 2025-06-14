@@ -4,143 +4,82 @@
   <meta charset="UTF-8">
   <title>About - Mirfa 2 RO</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f7fb;
-      color: #333;
-    }
-
-    .nameband {
-      background-color: white;
-      padding: 10px 20px;
-      text-align: center;
-      border-bottom: 5px solid #0071bc;
-    }
-    .nameband img {
-      height: 60px;
-      vertical-align: middle;
-      margin-right: 15px;
-    }
-    .nameband .arabic {
-      font-family: 'Arial', sans-serif;
-      font-size: 1.1em;
-      display: block;
-      direction: rtl;
-    }
-    .nameband .english {
-      font-weight: bold;
-      font-size: 1.1em;
-      display: block;
-      margin-top: 5px;
-    }
-
-    nav {
-      background: #ffffff;
-      padding: 10px 30px;
-      display: flex;
-      justify-content: flex-end;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    nav a {
-      text-decoration: none;
-      color: #0366d6;
-      margin-left: 25px;
-      font-weight: bold;
-    }
-
-    .content {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      color: #003366;
-      border-left: 5px solid #0071bc;
-      padding-left: 10px;
-      font-size: 1.8em;
-      margin-bottom: 15px;
-    }
-
-    p {
-      font-size: 1.05em;
-      line-height: 1.7;
-      margin-bottom: 20px;
-    }
-
-    .partners {
-      display: flex;
-      justify-content: space-around;
-      margin: 40px 0;
-    }
-    .partners img {
-      height: 50px;
-      filter: grayscale(60%);
-      transition: 0.3s;
-    }
-    .partners img:hover {
-      filter: none;
-    }
-
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 0.9em;
-    }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4f7fb; color: #333; }
+    .nameband { background: white; padding: 10px 20px; text-align: center; border-bottom: 5px solid #0071bc; }
+    .nameband img { height: 60px; vertical-align: middle; margin-right: 15px; }
+    .nameband .arabic { font-family: 'Arial', sans-serif; font-size: 1.1em; display: block; direction: rtl; }
+    .nameband .english { font-weight: bold; font-size: 1.1em; display: block; margin-top: 5px; }
+    nav { background: #fff; padding: 10px 30px; display: flex; justify-content: flex-end; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    nav a { text-decoration: none; color: #0366d6; margin-left: 25px; font-weight: bold; }
+    .content { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    h2 { color: #003366; border-left: 5px solid #0071bc; padding-left: 10px; font-size: 1.8em; margin-bottom: 15px; }
+    p { font-size: 1.05em; line-height: 1.7; margin-bottom: 20px; }
+    .partners { display: flex; justify-content: space-around; align-items: center; margin: 40px 0; flex-wrap: wrap; }
+    .partners div { max-width: 400px; margin: 10px; text-align: center; }
+    .partners img { height: 60px; margin-bottom: 10px; filter: grayscale(60%); transition: filter 0.3s ease; }
+    .partners img:hover { filter: none; }
+    footer { background: #003366; color: white; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9em; }
   </style>
 </head>
 <body>
 
-<!-- Company Name -->
-<div class="nameband">
-  <img src="logo small.png" alt="Company Logo">
-  <span class="arabic">شركة المرفأ 2 ار او لتشغيل وصيانة المياه ذ.م.م</span>
-  <span class="english">MIRFA 2 RO WATER OPERATIONS AND MAINTENANCE COMPANY L.L.C.</span>
-</div>
-
-<!-- Navigation -->
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="mission.html">Mission & Values</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<!-- Main Content -->
-<div class="content">
-  <h2>Company Profile</h2>
-  <p>
-    Mirfa 2 RO Water Operations & Maintenance Company L.L.C. is responsible for the long-term operation and maintenance of the Mirfa 2 Reverse Osmosis Desalination Plant — a strategically important water infrastructure asset in Abu Dhabi’s Al Dhafra region.
-  </p>
-  <p>
-    Established under a 30-year O&M agreement, the company ensures reliable, safe, and sustainable delivery of 120 million imperial gallons of potable water per day, serving over 210,000 households across the UAE.
-  </p>
-
-  <h2>About the Project</h2>
-  <p>
-    The Mirfa 2 RO project is an Independent Water Project (IWP) initiated by Emirates Water & Electricity Company (EWEC), in partnership with ENGIE and TAQA. It reflects the UAE’s strategic commitment to decarbonization and water security, leveraging energy-efficient membrane desalination technology.
-  </p>
-
-  <div class="partners">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/ENGIE_logo_2015.svg/512px-ENGIE_logo_2015.svg.png" alt="Engie">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/TAQA_Logo.svg/512px-TAQA_Logo.svg.png" alt="TAQA">
-    <img src="https://www.ewec.ae/themes/custom/ewec/assets/images/logo-en.svg" alt="EWEC">
+  <!-- Name Band -->
+  <div class="nameband">
+    <img src="logo%20small.png" alt="Company Logo">
+    <span class="arabic">شركة المرفأ 2 ار او لتشغيل وصيانة المياه ذ.م.م</span>
+    <span class="english">MIRFA 2 RO WATER OPERATIONS AND MAINTENANCE COMPANY L.L.C.</span>
   </div>
 
-  <h2>Why It Matters</h2>
-  <p>
-    As climate resilience and water demand increase, M2 RO represents a cornerstone in the UAE’s water strategy. It minimizes environmental impact, supports public-private collaboration, and provides operational excellence through state-of-the-art facilities.
-  </p>
-</div>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mission.html">Mission & Values</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<!-- Footer -->
-<footer>
-  &copy; 2025 Mirfa 2 RO Water Operations & Maintenance Company LLC. All rights reserved.
-</footer>
+  <div class="content">
+    <h2>About the Project</h2>
+
+    <img src="ewec-project.png" alt="Project Overview Image" style="max-width:100%; border-radius: 6px; margin-bottom: 20px;">
+
+    <p>
+      Mirfa 2 Reverse Osmosis will become the UAE’s third largest low-carbon intensive RO plant once fully commercially operational.
+    </p>
+
+    <p>
+      EWEC (Emirates Water and Electricity Company), a leading company in the integrated coordination of planning, purchasing, and supply of water and electricity across the UAE, announced the award for its Mirfa 2 Reverse Osmosis (M2 RO) Independent Water Project. The project for the development of the low-carbon intensive RO desalination plant was awarded to a consortium led by ENGIE. TAQA will invest equity and take on the majority share in the project, and a role in the Operations and Maintenance company. Following the award, the project’s Water Purchase Agreement (WPA) and the Shareholders Agreement (SHA) were signed between TAQA, ENGIE, and EWEC.
+    </p>
+
+    <p>
+      Mirfa 2 Reverse Osmosis (M2 RO) Plant uses RO technology to produce and supply up to 120 million imperial gallons, equivalent to 550,000 cubic metres of potable water per day to EWEC under a 30-year O&M Agreement with Mirfa 2 RO Desalination Company.
+    </p>
+
+    <p>
+      The M2 RO Water Plant is located adjacent to the existing Mirfa 1 Plant located at the Mirfa Complex five kilometers west of the town of Mirfa, about 100 kilometers southwest of the city of Abu Dhabi on the Arabian Gulf coast in UAE. The expected date for starting commercial operations of the plant is November 2025.
+    </p>
+
+    <p>
+      The processes stages that make up the plant are: ❖ Sea water intake ❖ Dissolved Air Flotation (DAF) ❖ Dual Media Pressure Filtration (DMPF) ❖ Cartridge Filtration (CF) ❖ Reverse osmosis Racks (RO) ❖ Chemical Treatment ❖ Limestone filtration ❖ Potable water storage/network ❖ Sludge treatment ❖ Utilities or auxiliary equipment
+    </p>
+
+    <h2>Parent Companies</h2>
+
+    <div class="partners">
+      <div>
+        <img src="engie-logo.png" alt="ENGIE Logo">
+        <p><strong>ENGIE</strong> is a French multinational utility company with over 30 years in the Middle East desalination sector. Today, ENGIE operates 18 power and desalination plants in the Gulf region, delivering 7 million m³/day of clean water to more than 10 million people.</p>
+      </div>
+      <div>
+        <img src="taqa-logo.png" alt="TAQA Logo">
+        <p><strong>TAQA</strong>, founded in 2005 and headquartered in Abu Dhabi, is a diversified utilities and energy group focusing on power and water desalination, with assets in 11 countries. TAQA plays a crucial role in the UAE’s water strategy.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Mirfa 2 RO Water Operations & Maintenance Company LLC. All rights reserved.
+  </footer>
 
 </body>
 </html>
