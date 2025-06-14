@@ -5,95 +5,125 @@
   <title>Mirfa 2 RO Water Operations & Maintenance Company</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f4f6f8;
-      color: #222;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
     }
-    header {
-      background: #ffffff;
-      padding: 15px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    /* Top bilingual name band */
+    .nameband {
+      background-color: white;
+      padding: 10px 20px;
+      text-align: center;
+      border-bottom: 5px solid #0071bc;
     }
-    header img {
+    .nameband img {
       height: 60px;
+      vertical-align: middle;
+      margin-right: 15px;
     }
-    header nav a {
-      margin-left: 25px;
+    .nameband .arabic {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.1em;
+      display: block;
+      direction: rtl;
+    }
+    .nameband .english {
+      font-weight: bold;
+      font-size: 1.1em;
+      display: block;
+      margin-top: 5px;
+    }
+
+    /* Navigation */
+    header nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    nav a {
       text-decoration: none;
       color: #0366d6;
+      margin-left: 25px;
       font-weight: bold;
     }
+
+    /* Hero section */
     .hero {
       background: url('https://images.unsplash.com/photo-1581093588401-dfe9f1c1847d') center center / cover no-repeat;
-      color: white;
-      text-align: center;
       padding: 160px 20px;
+      text-align: center;
+      color: white;
     }
     .hero h1 {
-      font-size: 3em;
+      font-size: 2.8em;
       margin: 0;
       text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     }
     .hero p {
+      margin-top: 10px;
       font-size: 1.2em;
-      margin-top: 15px;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     }
-    .content {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
+
+    /* Project info image */
+    .infographic {
+      text-align: center;
+      background: #ffffff;
+      padding: 40px 20px;
     }
-    .content h2 {
-      color: #003366;
-      font-size: 1.8em;
+    .infographic img {
+      width: 100%;
+      max-width: 750px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
-    .content p {
-      line-height: 1.6;
-    }
+
+    /* Footer */
     footer {
+      background-color: #003366;
+      color: white;
       text-align: center;
       padding: 20px;
-      color: #888;
-      font-size: 0.9em;
       margin-top: 40px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
+<!-- Logo & Company Name -->
+<div class="nameband">
+  <img src="logo small.png" alt="Company Logo">
+  <span class="arabic">شركة المرفأ 2 ار او لتشغيل وصيانة المياه ذ.م.م</span>
+  <span class="english">MIRFA 2 RO WATER OPERATIONS AND MAINTENANCE COMPANY L.L.C.</span>
+</div>
+
+<!-- Navigation -->
 <header>
-  <div>
-    <img src="logo small.png" alt="M2 RO Logo">
-  </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
+    <a href="mission.html">Mission & Values</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
+<!-- Hero Banner -->
 <section class="hero">
   <h1>Innovative Solutions for a Sustainable Future</h1>
   <p>Mirfa 2 RO – Ensuring water security for the UAE</p>
 </section>
 
-<section class="content">
-  <h2>About the Project</h2>
-  <p>
-    The Mirfa 2 Reverse Osmosis (M2 RO) Seawater Desalination Plant is a strategic Independent Water Project (IWP) led by Emirates Water & Electricity Company (EWEC), developed in partnership with ENGIE and TAQA.
-    Located in the Al Dhafra Region of Abu Dhabi, the project will supply 120 million imperial gallons per day (MIGD) of potable water, significantly supporting the UAE's long-term water demand and sustainability goals.
-  </p>
-  <p>
-    The project reflects the UAE’s commitment to adopting energy-efficient, low-carbon desalination technologies and strengthening public-private partnerships in the utility sector. The Mirfa 2 RO Water Operations & Maintenance Company is entrusted with the long-term reliability and performance of this critical infrastructure.
-  </p>
+<!-- Infographic -->
+<section class="infographic">
+  <img src="ewec-project.png" alt="EWEC/TAQA/ENGIE Project Infographic">
 </section>
 
+<!-- Footer -->
 <footer>
   &copy; 2025 Mirfa 2 RO Water Operations & Maintenance Company LLC. All rights reserved.
 </footer>
