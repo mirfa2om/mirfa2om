@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Mirfa 2 O&M</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 80px; background: #f4f4f4; }
+    h1 { color: #003366; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Mirfa 2 O&M</h1>
+  <p>This website is under development.</p>
+</body>
+</html>
