@@ -2,29 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact - Mirfa 2 O&M</title>
+  <title>Contact - Mirfa 2 RO</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f0f0f0; padding: 50px; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: #003366; font-weight: bold; }
-    form { margin-top: 20px; }
-    input, textarea { width: 300px; padding: 10px; margin: 10px 0; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    .nameband {
+      background-color: white;
+      padding: 10px 20px;
+      text-align: center;
+      border-bottom: 5px solid #0071bc;
+    }
+    .nameband img {
+      height: 60px;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+    .nameband .arabic {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.1em;
+      display: block;
+      direction: rtl;
+    }
+    .nameband .english {
+      font-weight: bold;
+      font-size: 1.1em;
+      display: block;
+      margin-top: 5px;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: flex-end;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    nav a {
+      text-decoration: none;
+      color: #0366d6;
+      margin-left: 25px;
+      font-weight: bold;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 2em;
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .contact-box {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-box p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .email {
+      color: #0056b3;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
-  <h1>Contact Us</h1>
-  <p>For inquiries, please reach out via the form below.</p>
 
-  <form action="https://formspree.io/f/yourformid" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="email" name="_replyto" placeholder="Your Email" required><br>
-    <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
-    <button type="submit">Send</button>
-  </form>
+<!-- Company Header -->
+<div class="nameband">
+  <img src="logo small.png" alt="Company Logo">
+  <span class="arabic">شركة المرفأ 2 ار او لتشغيل وصيانة المياه ذ.م.م</span>
+  <span class="english">MIRFA 2 RO WATER OPERATIONS AND MAINTENANCE COMPANY L.L.C.</span>
+</div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<!-- Navigation -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="mission.html">Mission & Values</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Main Contact Info -->
+<div class="content">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p>For any <strong>complaints, suggestions, grievances, or environmental concerns</strong>, please email:</p>
+    <p><a class="email" href="mailto:admin.mirfa2@engie.com">admin.mirfa2@engie.com</a></p>
+
+    <p>For <strong>job applications</strong> or expressing your interest in working with us, please send your resume to:</p>
+    <p><a class="email" href="mailto:hr.mirfa2@engie.com">hr.mirfa2@engie.com</a></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Mirfa 2 RO Water Operations & Maintenance Company LLC. All rights reserved.
+</footer>
+
 </body>
 </html>
