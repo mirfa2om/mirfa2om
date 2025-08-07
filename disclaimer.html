@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Disclaimer - Mirfa 2 RO O&M Company</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #111;
+      font-size: 2.5em;
+    }
+    .language-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .language-buttons button {
+      background-color: #0071bc;
+      color: white;
+      border: none;
+      margin: 5px;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .disclaimer {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .arabic {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mail Disclaimer</h1>
+
+  <div class="language-buttons">
+    <button onclick="showLanguage('en')">ENGLISH</button>
+    <button onclick="showLanguage('ar')">العربية</button>
+  </div>
+
+  <div class="disclaimer">
+    <div id="en" class="lang-section">
+      <p>
+        This message is confidential and is intended only for the recipient(s). If you are not the intended recipient, please notify us immediately and delete the message. You are not authorized to copy, disclose, or use any part of this message. Any confidentiality or legal privilege is not waived or lost due to any mistaken transmission.
+      </p>
+      <p>
+        All communications to and from Mirfa 2 RO Water Operations & Maintenance Company L.L.C. may be monitored to ensure compliance with policies and to detect malware. Electronic communication is not secure and may be intercepted or altered. By communicating electronically with our company, you accept these risks. Authority and delegation must be verified and will be provided upon request.
+      </p>
+    </div>
+
+    <div id="ar" class="lang-section hidden arabic">
+      <p>
+        هذه الرسالة سرية ومخصصة فقط للمستلم (المستلمين) المقصود. إذا لم تكن المستلم المقصود، يرجى إبلاغنا فوراً وحذف الرسالة. لا يُسمح لك بنسخ أو الكشف أو استخدام أي جزء من هذه الرسالة. لا يُعتبر أي تنازل عن السرية أو الامتياز القانوني نتيجة للإرسال الخاطئ.
+      </p>
+      <p>
+        قد يتم مراقبة جميع الاتصالات إلى ومن شركة المرفأ 2 لتشغيل وصيانة المياه ذ.م.م لضمان الامتثال للسياسات وللكشف عن البرامج الضارة. الاتصالات الإلكترونية غير آمنة وقد يتم اعتراضها أو تعديلها. من خلال التواصل إلكترونيًا مع شركتنا، فإنك تقبل هذه المخاطر. يجب التحقق من السلطات والتفويضات، وستُقدم عند الطلب.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showLanguage(lang) {
+      document.querySelectorAll('.lang-section').forEach(div => div.classList.add('hidden'));
+      document.getElementById(lang).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
